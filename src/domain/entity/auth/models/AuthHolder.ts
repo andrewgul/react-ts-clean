@@ -8,7 +8,7 @@ export default class AuthHolder {
     private isAuthorized: boolean
     private authToken: string
 
-    constructor() {
+    public constructor() {
         this.isAuthorized = false
         this.authListeners = []
         this.authToken = ''
