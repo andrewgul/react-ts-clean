@@ -10,7 +10,7 @@ export default interface AuthViewModel extends BaseViewModel {
     isSignOutButtonVisible: boolean
 
     isShowError: boolean
-    errorMessage: boolean
+    errorMessage: string
 
     authStatus: string
     isAuthStatusPositive: boolean

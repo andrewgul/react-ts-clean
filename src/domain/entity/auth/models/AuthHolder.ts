@@ -17,15 +17,13 @@ export default class AuthHolder {
     public onSignedIn(authToken: string): void {
         this.isAuthorized = true
         this.authToken = authToken
-        // TODO
-        // this.notifyListeners() 
+        this.notifyListeners() 
     }
 
     public onSignedOut(): void {
         this.isAuthorized = false
         this.authToken = ''
-        // TODO
-        // this.notifyListeners() 
+        this.notifyListeners() 
     }
 
     public isUserAuthorized() {
